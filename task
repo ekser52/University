@@ -1,0 +1,100 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN1ELmnT25nDoc/vJP7BXrF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ekser52/University/blob/main/task\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def standart_num(num):\n",
+        "    num = num.replace(\" \",\"\").replace(\"-\",\"\")\n",
+        "    if num.startswith('8'):\n",
+        "        num = \"+7\" + num[1:]\n",
+        "    elif not num.startswith('+'):\n",
+        "        num = \"+7\" + num\n",
+        "    return num\n",
+        "def standart_name(name):\n",
+        "    return \" \".join(word.capitalize() for word in name.split())\n",
+        "book={}\n",
+        "def add_contact():\n",
+        "    name = standart_name(input(\"Введите название для контакта: \"))\n",
+        "    num = standart_num(input(\"Введите номер телефона: \"))\n",
+        "    book[name] = num\n",
+        "    print(\"Контакт\", name,\"успешно добавлен!\")\n",
+        "def delete_contact():\n",
+        "    name = standart_name(input(\"Введите имя контакта для удаления: \"))\n",
+        "    if name in book:\n",
+        "        del book[name]\n",
+        "        print(\"Контакт\", name,\"успешно удалён!\")\n",
+        "    else:\n",
+        "        print(\"Контакт не найден!\")\n",
+        "def show_contact():\n",
+        "    if book:\n",
+        "        print(\"Список контактов:\")\n",
+        "        for name, num in book.items():\n",
+        "            print(name + \":\", num)\n",
+        "    else:\n",
+        "        print(\"Телефонная книга пуста.\")\n",
+        "def change_num():\n",
+        "    name = standart_name(input(\"Введите имя контакта для изменения номера: \"))\n",
+        "    if name in book:\n",
+        "        new_num = standart_num(input(\"Введите новый номер телефона: \"))\n",
+        "        book[name] = new_num\n",
+        "        print(\"Номер для\", name,\"успешно изменён!\")\n",
+        "    else:\n",
+        "        print(\"Контакт не найден!\")\n",
+        "def main():\n",
+        "    while True:\n",
+        "        print(\"Выберите функцию:\")\n",
+        "        print(\"1. Добавить контакт\")\n",
+        "        print(\"2. Удалить контакт\")\n",
+        "        print(\"3. Показать список контактов\")\n",
+        "        print(\"4. Изменить номер\")\n",
+        "        print(\"5. Выход\")\n",
+        "        choise = input(\"Введите номер функции: \")\n",
+        "        if choise ==\"1\":\n",
+        "            add_contact()\n",
+        "        elif choise == \"2\":\n",
+        "            delete_contact()\n",
+        "        elif choise == \"3\":\n",
+        "            show_contact()\n",
+        "        elif choise == \"4\":\n",
+        "            change_num()\n",
+        "        elif choise == \"5\":\n",
+        "            print(\"Выход из программы.\")\n",
+        "            break\n",
+        "        else:\n",
+        "            print(\"Неверный выбор, попробуйте снова.\")\n",
+        "main()\n"
+      ],
+      "metadata": {
+        "id": "-P9dcnXabrn9"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
