@@ -1,0 +1,71 @@
+Слово | Перевод | Количество
+в | V | 12
+занятие | class | 7
+быть | be | 6
+зал | hall | 6
+я | I | 5
+следующий | next | 4
+октябрь | October | 4
+и | And | 4
+если | If | 4
+то | That | 4
+завтра | Tomorrow | 3
+не | Not | 3
+весь | all | 3
+можно | Can | 3
+чистый | clean | 3
+обувь | shoes | 3
+белый | white | 3
+носок | sock | 3
+ещё | more | 3
+здравствуйте | Hello | 3
+а | A | 3
+на | on | 3
+у | in | 3
+вы | You | 3
+же | same | 3
+справка | reference | 3
+они | They | 3
+по | by | 2
+физкультура | physical education | 2
+официально | officially | 2
+отменять | cancel | 2
+мочь | be able | 2
+передать | hand over | 2
+через | through | 2
+что | What | 2
+или | or | 2
+после | after | 2
+это | This | 2
+вторник | Tuesday | 2
+пара | pair | 2
+начинаться | start off | 2
+без | without | 2
+опоздание | lateness | 2
+раз | once | 2
+дождь | rain | 2
+улица | street | 2
+мы | We | 2
+заниматься | study | 2
+университет | university | 2
+раздевалка | changing room | 2
+там | there | 2
+сообщить | report | 2
+кто | Who | 2
+смочь | be able to | 2
+пусть | let | 2
+староста | old age | 2
+напишитый | written | 2
+делаться | make | 2
+получить | get | 2
+только | only | 2
+среда | environment | 2
+отдать | give away | 2
+этот | this | 2
+день | day | 2
+сдать | pass | 2
+до | to | 2
+недопуск | non-admission | 2
+написать | write | 2
+свой | mine | 2
+страница | page | 2
